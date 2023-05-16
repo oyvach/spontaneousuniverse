@@ -1,0 +1,47 @@
+html, body {
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width:100%;
+    background-color: whitesmoke;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin-top: 48px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.fit-picture {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.textlink > a {
+    text-decoration:none;
+    color:rgb(82, 142, 190);
+}
+
+.textlink > a:visited {
+    color:rgb(105, 98, 199);
+    text-decoration:none;
+}
+
+.textlink > a:hover {
+    color:grey;
+    text-decoration:none;
+}
+
+ul.myUL {
+    display: inline-block;
+    text-align: left;
+  }
