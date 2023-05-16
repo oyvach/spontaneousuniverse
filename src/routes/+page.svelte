@@ -40,7 +40,7 @@
   <p>
     Shown above is a slice of the simulation box of a universe where the the
     dark energy component is not the cosmological constant, but rather the
-    <span class="textlink"><a href="./pages/symmetron.html">symmetron</a></span>
+    <span class="textlink"><a href="symmetron">symmetron</a></span>
     field, a dynamic component that can cluster. The field has the has the potential
     {equ1}
     in which the trace of the matter stress-energy tensor INSERT makes the extremum
