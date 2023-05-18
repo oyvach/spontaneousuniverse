@@ -1,4 +1,4 @@
-<h1>Acknowledgements</h1>
+<h1 lang="de">Acknowledgements</h1>
 <hr>
 <div style="text-align: center;">
   <ul class="myUL">
@@ -9,9 +9,18 @@
   </ul>
 </div>
 <hr>
-<div style="text-align: center;">
-<span class="fit-picture">
-  <img style = "position:relative; left:40%; top:20px;" width="88px" height="auto" src="uio.jpg"/>
-  <img style = "position:relative; right:20%; top:-60px;" width="325px" height="auto" src="forskningsradet.jpg"/>
-</span>
+<div>
+  <div>
+    <span style="display:block;">
+      <img src="uio.jpg" alt="uio" style="width:13%; float:left; margin-left:20%;"/>
+    </span>
+    <span style="display:flex; justify-content:center;">
+      <img src="forskningsradet.jpg" alt="forskningsrådet" style="width:70%; align-items:center; "/>
+    </span>
+  </div> 
 </div>
+<style>
+
+
+
+</style>

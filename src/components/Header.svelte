@@ -1,6 +1,11 @@
+<script>
+  import { base } from "$app/paths";
+  import { Button, Dropdown, DropdownItem, Chevron } from "flowbite-svelte";
+</script>
+
 <nav class="header">
   <div class="logo">
-    <a href="/"> Øyvind Christiansen </a>
+    <a href="{base}/"> Øyvind Christiansen </a>
   </div>
   <div class="links">
     <div class="dropdown">
@@ -21,40 +26,51 @@
       </div>
     </div>
     <div class="link">
-      <a href="/about"> about me </a>
+      <a href="{base}/about"> about me </a>
     </div>
     <div class="link">
-      <a href="/acknowledgements"> acknowledgements </a>
+      <a href="{base}/acknowledgements"> acknowledgements </a>
     </div>
     <div class="link">
-      <a href="/contact"> contact </a>
+      <a href="{base}/contact"> contact </a>
     </div>
   </div>
 </nav>
 
 <style>
   .header {
-    padding: 16px 32px;
+    padding: 16px 36px;
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
-    /*position: fixed; */
-    width: 100%;
+    width: 100vw;
     top: 0%;
-    /*     background-color: rgb( 10, 40, 100);
-   */
-    /*     background-color: hsla(295, 40%, 62%, 0.45);
-   */
-    background-image: url("header.jpeg");
+    background-image: url("/header.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0px 2px 8px 4px rgba(49, 40, 40, 0.6);
   }
+  @media (max-width: 768px) {
+    .header {
+      font-size: small;
+      padding: 24px;
+    }
+  }
+
   .logo {
     font-size: 24px;
     background-color: hsla(0, 16%, 73%, 0);
     border-radius: 0%;
+    margin-left: 5%;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 20px;
+      position: relative;
+      vertical-align: bottom;
+    }
   }
 
   .logo a {
@@ -69,7 +85,6 @@
     color: grey;
     text-decoration: none;
   }
-
 
   .dropdown {
     color: white;

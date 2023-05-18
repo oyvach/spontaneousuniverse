@@ -1,4 +1,5 @@
 .link {
+    width: fit-content;
     text-decoration: none;
     color: whitesmoke;
   }
@@ -16,12 +17,14 @@
     color: grey;
     text-decoration: none;
   }
-
-  .links {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    column-gap: 40px;
-    padding: 4px 32px;
-    vertical-align: middle;
+  @media (min-width: 768px) {
+    .links {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      column-gap: 6vw;
+      padding: 4px 32px;
+      vertical-align: middle;
+    }
   }
+
