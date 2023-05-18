@@ -6,5 +6,5 @@ npx gh-pages -d build
 ../gitsync.sh "sync" "master"
 git checkout gh-pages
 touch .nojekyll
-../gitsync "added .nojekyll" "gh-pages"
+../gitsync.sh "added .nojekyll" "gh-pages"
 git checkout master
