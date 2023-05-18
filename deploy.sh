@@ -1,11 +1,10 @@
 #!/bin/bash
 
-git checkout master
+./gitsync.sh "sync" "master"
 npm run build
 npx gh-pages -d build
+./gitsync.sh "sync" "master"
 git checkout gh-pages
 touch .nojekyll
-git add .nojekyll
-git commit -m "added nojekyll file"
-git push origin gh-pages
+./gitsync "added .nojekyll" "gh-pages"
 git checkout master
