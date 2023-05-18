@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ../gitsync.sh "sync" "master"
+npm i
 npm run build
 npx gh-pages -d build
 ../gitsync.sh "sync" "master"
