@@ -1,6 +1,6 @@
 #!/bin/bash
-git pull origin 
+git pull origin master
 git add --all
 git commit -m "$1"
-git push origin 
+git push origin master
 
