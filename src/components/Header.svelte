@@ -1,6 +1,5 @@
 <script>
   import { base } from "$app/paths";
-  import { Button, Dropdown, DropdownItem, Chevron } from "flowbite-svelte";
 </script>
 
 <nav class="header">
@@ -22,6 +21,9 @@
         </div>
         <div class="dropdown-item">
           <a class="link" href="/cbh">Charged Black Holes</a>
+        </div>
+        <div class="dropdown-item">
+          <a class="link" href="/notes">Notes</a>
         </div>
       </div>
     </div>
@@ -98,30 +100,36 @@
 
   .dropdown-content {
     text-align: center;
-    display: none;
+    visibility: hidden;
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 156px;
+    min-width: max-content;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.418);
     padding: 8px 8px;
     z-index: 1;
-    border-style: solid;
-    border-color: grey;
-    border-radius: 1px;
   }
+  @media (max-width: 768px) {
+    .dropdown-content {
+      min-width: 10em;
+    }
+  }
+
   .dropdown-item {
     text-align: left;
-    margin-left: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 2px 2px;
   }
 
   .dropdown-content > .dropdown-item > a:hover {
-    color: grey;
+    color: rgb(216, 216, 216);
   }
   .dropdown-content > .dropdown-item > a {
     color: black;
   }
 
   .dropdown:hover .dropdown-content {
-    display: block;
+    visibility: visible;
   }
 </style>
