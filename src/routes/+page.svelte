@@ -1,28 +1,28 @@
 <script>
   import { base } from "$app/paths";
   import { onMount } from "svelte";
+  let equ1 = `$$x_{\\rm{test}} = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}$$`;
+
   onMount(() => {
-    let script = document.createElement("script");
+		
+		let script = document.createElement('script');
     script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
     document.head.append(script);
-
-    script.onload = () => {
+		
+		script.onload = () => {
       MathJax = {
-        tex: {
-          inlineMath: [
-            ["$", "$"],
-            ["\\(", "\\)"],
-          ],
-        },
-        svg: { fontCache: "global" },
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
       };
-    };
-  });
+		};
+					  
+	});
 </script>
 
 <div class="content">
   <h1>Gravitation, Science and Data Visulisation</h1>
   <hr />
+
   <p>
     This web page is currently under development, and will function as a
     showcase for my research into the the dark sector physics in the
@@ -73,6 +73,8 @@
     </li>
     <li>Cell phone support! Develop using cmd+opt+m in firefox</li>
   </ul>
+  <p>{equ1}</p>
+
 </div>
 
 <style>

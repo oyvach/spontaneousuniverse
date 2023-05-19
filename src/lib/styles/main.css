@@ -28,3 +28,11 @@
     }
   }
 
+  .backbutton {
+    color:rgb(229, 229, 229);
+    background-color: rgb(105, 102, 102);
+    border-radius: 10%;
+    border-color: black;
+    padding: 0.2em 0.5em;
+  }
+

@@ -17,7 +17,7 @@
           <a class="link" href="/symmetron">Asymmetron</a>
         </div>
         <div class="dropdown-item">
-          <a class="link" href="/aest">AEST</a>
+          <a class="link" href="/aest">AeST</a>
         </div>
         <div class="dropdown-item">
           <a class="link" href="/cbh">Charged Black Holes</a>
