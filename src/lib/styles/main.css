@@ -36,3 +36,19 @@
     padding: 0.2em 0.5em;
   }
 
+  .math {
+    overflow-x: hidden scroll;
+    overflow-y: hidden;
+    display: block;
+    text-align: center;
+  }
+
+  .math--inline {
+    display: inline-block;
+    /*NOTE leave space for trailing punctuation*/
+    max-width: 99%;
+  }
+
+  .math--block {
+    display: block;
+  }

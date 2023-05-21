@@ -1,8 +1,10 @@
 <script>
   import { base } from "$app/paths";
   import { onMount } from "svelte";
-  let equ1 = `$$x_{\\rm{test}} = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}$$`;
-
+  let veffeq = `
+  $$ V_{\\rm {eff}} \\equiv V - \\ln A(\\phi) T_{\\rm m} = V_0 - \\frac{1}{2}\\mu^2\\phi^2 - \\frac{1}{3}\\kappa
+    \\phi^3 + \\frac{1}{4}\\lambda \\phi^4 - \\ln A(\\phi) T_{\\rm m}, $$
+  `
   onMount(() => {
 		
 		let script = document.createElement('script');
@@ -41,8 +43,7 @@
   <span class="textlink"><a href="{base}/symmetron">symmetron</a></span>
   field, a dynamic component that can cluster. The field has the has the potential
   <span class="math">
-    $$ V \equiv V - \ln A(\phi) T_m = V_0 - \frac{1}{2}\mu^2\phi^2 - \frac{1}{3}\kappa
-    \phi^3 + \frac{1}{4}\lambda \phi^4 - \ln A(\phi) T_m, $$
+    {veffeq}
   </span>
   in which the trace of the matter stress-energy tensor INSERT makes the extremum
   at origin stable as long as INSERT, effectively screening the the effect of the
@@ -57,11 +58,6 @@
   <h2>NB: To do, web page:</h2>
   <ul class="myUL">
     <li>
-      Make sure that page behaves sensible when loading/different window sizes,
-      different platforms (cell phone) etc
-    </li>
-    <li>Add content...</li>
-    <li>
       new object navigator on left shoulder with hyperlinks to different
       sections
     </li>
@@ -71,26 +67,13 @@
     <li>
       Switch over to (vector graphic -> SVG, pics -> webp, movies -> webm)
     </li>
-    <li>Cell phone support! Develop using cmd+opt+m in firefox</li>
+    <li>Figure out how to do line numbers nice in mathjax in svelte</li>
+    <li>
+      Better whitespacing to fill lines such as in LaTeX?
+    </li>
+    <li>
+      Date of writing and last update for articles
+    </li>
   </ul>
-  <p>{equ1}</p>
 
 </div>
-
-<style>
-  .math {
-    overflow-x: hidden scroll;
-    overflow-y: hidden;
-    display: block;
-  }
-
-  .math--inline {
-    display: inline-block;
-    /*NOTE leave space for trailing punctuation*/
-    max-width: 99%;
-  }
-
-  .math--block {
-    display: block;
-  }
-</style>

@@ -1,4 +1,5 @@
 <h1>Acknowledgements</h1>
+<hr style="width:100%">
 <div style="text-align: center;">
 	<ul class="myUL">
 		<li>
@@ -11,21 +12,21 @@
 			Erlend Ydse for helping out with this web page
 		</li>
 	</ul>
+  <hr style="margin-top: 1em; width:80%"/>
 </div>
 <div>
-	<hr />
-	<span style="display:block; margin-top:2em;"
+	<span style="display:block; margin-top:1em; margin-left:15%; margin-right:10%"
 		><img
 			src="uio.jpg"
 			alt="uio"
-			style="width:13%; float:left; margin-left:10%;"
+			style="width:16%; float:left;"
 		/></span
 	>
 	<span style="display:block; position:relative;"
 		><img
 			src="forskningsradet.jpg"
 			alt="forskningsrådet"
-			style="width:65%;"
+			style="width:60%;"
 		/></span
 	>
 </div>

@@ -51,7 +51,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0px 2px 8px 4px rgba(49, 40, 40, 0.6);
+    box-shadow: 0px 1px 8px 1px rgba(54, 53, 53, 0.6);
   }
   @media (max-width: 768px) {
     .header {
