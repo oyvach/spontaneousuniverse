@@ -1,4 +1,4 @@
-import{S as xt,i as At,s as It,k as a,q as i,a as v,l as n,m as l,r as f,h as e,c as u,n as r,b as m,D as t,C as it}from"../chunks/index.fe3c98df.js";import{b as g}from"../chunks/paths.350fb89e.js";function St(kt){let d,O,j,q,B,p,Q,b,P,R,z,J,F,G,W,o,D,k,x,K,M,A,I,S,U,V,_,X,w,N,Z,$,y,tt,C,H,et,st,E,at,L,T,nt;return{c(){d=a("h1"),O=i("Notes"),j=v(),q=a("hr"),B=v(),p=a("p"),Q=i(`Here are some notes of different results that I have
+import{S as xt,i as At,s as It,k as a,q as i,a as v,l as n,m as l,r as f,h as e,c as u,n as r,b as m,D as t,C as it}from"../chunks/index.fe3c98df.js";import{b as g}from"../chunks/paths.5f73dbdc.js";function St(kt){let d,O,j,q,B,p,Q,b,P,R,z,J,F,G,W,o,D,k,x,K,M,A,I,S,U,V,_,X,w,N,Z,$,y,tt,C,H,et,st,E,at,L,T,nt;return{c(){d=a("h1"),O=i("Notes"),j=v(),q=a("hr"),B=v(),p=a("p"),Q=i(`Here are some notes of different results that I have
 	found that might be useful to both the reader and
 	myself. Be wary mistakes and please don't hesitate
 	to report them to

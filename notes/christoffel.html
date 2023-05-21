@@ -18,13 +18,13 @@
     />
     <meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/0.b2914d85.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.0eb8ed06.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.fbe63b57.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.fe3c98df.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.9cab0f62.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.350fb89e.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.75796dcc.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.6d66be58.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/9.979f18a1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.5c5c9d06.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.5f73dbdc.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.9f38016c.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.8e608f7f.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/9.a132a638.js">
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">
@@ -41,33 +41,37 @@
     <div class="link"><a href="/acknowledgements">acknowledgements </a></div>
     <div class="link"><a href="/contact">contact </a></div></div>
 </nav>
-  <main class="content svelte-1qo7bn3"><h1>The Christoffel symbols of perturbed FLRW spacetimes</h1>
+  <main class="content svelte-1qo7bn3"><h1>The Christoffel symbols of perturbed FLRW spacetimes
+</h1>
 <hr>
-<p>It can be surprisingly difficult to find essential geometrical
-    quantities you need to make calculations in some space times.
-    They are easily available for the flat FLRW in for example (Dodelson 2003),
-    but I have at least struggled finding them for the fully perturbed FLRW, especially
-    when using fully conformal coordinates. One option is to use for example the xAct
-    package of Mathematica, but here instead, I will present some analytically
-    derived results.  I will be using the Poisson gauge, which
-	reduces to the Newtonian gauge in the weak-field limit. The space-time interval is
-    stated in conformal coordinates
+<p>It can be surprisingly difficult to find essential
+	geometrical quantities you need to make calculations in
+	some space times. They are easily available for the flat
+	FLRW in for example (Dodelson 2003), but I have at least
+	struggled finding them for the fully perturbed FLRW,
+	especially when using fully conformal coordinates. One
+	option is to use for example the xAct package of
+	Mathematica, but here instead, I will present some
+	analytically derived results. I will be using the
+	Poisson gauge, which reduces to the Newtonian gauge in
+	the weak-field limit. The space-time interval is stated
+	in conformal coordinates
 </p>
 <span class="math">$$
     \rm d s^2 = a(\tau)^2\Big[ -e^{2\Psi (\tau, \vec x)}\rm d \tau^2 
     - 2 B_i(\tau, \vec x) \rm d x^i \rm d \tau + (e^{-2\Phi
     (\tau, \vec x)}\delta_{ij} + h_{ij}(\tau, \vec x))\rm d x^i \rm d x^j \Big],
     $$</span>
-<p>from which we can find the metric.
-	The connection does not need be defined in terms of the
-	metric; it can instead be treated as an independent
-	object as in the Palatini formalism. The most general
-	connection describes a manifold that has curvature,
-	torsion, and non-metricity, the latter of which relates
-	to whether or not the covariant derivative that the
-	connection forms commutes with the metric. If we require
-	it to do so and also to have zero torsion, that fixes a
-	unique connection in terms of the metric, known as the
+<p>from which we can find the metric. The connection does
+	not need be defined in terms of the metric; it can
+	instead be treated as an independent object as in the
+	Palatini formalism. The most general connection
+	describes a manifold that has curvature, torsion, and
+	non-metricity, the latter of which relates to whether or
+	not the covariant derivative that the connection forms
+	commutes with the metric. If we require it to do so and
+	also to have zero torsion, that fixes a unique
+	connection in terms of the metric, known as the
 	Christoffel symbol
 </p>
 <span class="math">$$
@@ -81,8 +85,8 @@
 	so we will find this specifically below, in addition to
 	the complete symbols. All symbols not shown are
 	implicitply zero, and I have only done the expansions to
-    first order in the metric potentials, following the 
-    linearisation scheme of (Adamek 2016).
+	first order in the metric potentials, following the
+	linearisation scheme of (Adamek 2016).
 </p>
 
 <h2>Conformal time coordinates</h2>
@@ -98,8 +102,10 @@
     \\\Gamma^i_{00} &amp;=&amp; 
     \end{eqnarray}
     $$</span>
-<p>For which I made use of the useful quantities that I have
-    derived using the cofactor expansion and Cramer&#39;s rule. </p>
+<p>For which I made use of the useful quantities that I
+	have derived using the cofactor expansion and Cramer&#39;s
+	rule.
+</p>
 <span class="math">$$
     \begin{eqnarray}
     \sqrt{-g} &amp;=&amp; a^4\left(
@@ -139,7 +145,7 @@
     \end{eqnarray}
     $$</span>
 
-<p>For which I have made use of the quantities </p>
+<p>For which I have made use of the quantities</p>
 <span class="math">$$
     \begin{eqnarray}
     g &amp;=&amp; g_{\rm{conformal}} \\
@@ -171,7 +177,7 @@
 			
 			<script>
 				{
-					__sveltekit_1nfhn11 = {
+					__sveltekit_13an81n = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -181,8 +187,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.0eb8ed06.js"),
-						import("../_app/immutable/entry/app.75796dcc.js")
+						import("../_app/immutable/entry/start.fbe63b57.js"),
+						import("../_app/immutable/entry/app.9f38016c.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 9],
