@@ -36,7 +36,7 @@
     \\end{pmatrix},
     \\end{eqnarray}
     $$`;
-    let determinantCT = `$$
+	let determinantCT = `$$
     \\begin{eqnarray}
     g &=& g_{\\rm{conformal}} \\\\
     g_{\\mu\\nu} &=& 
@@ -74,50 +74,50 @@
     $$`;
 
 	onMount(() => {
-		let script = document.createElement("script");
-		script.src =
-			"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
-		document.head.append(script);
-
+		
+		let script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
+    document.head.append(script);
+		
 		script.onload = () => {
-			MathJax = {
-				tex: {
-					inlineMath: [
-						["$", "$"],
-						["\\(", "\\)"],
-					],
-				},
-				svg: { fontCache: "global" },
-			};
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+      };
 		};
+					  
 	});
 </script>
 
-<h1>The Christoffel symbols of perturbed FLRW spacetimes</h1>
+<h1>
+	The Christoffel symbols of perturbed FLRW spacetimes
+</h1>
 <hr />
 <p>
-	It can be surprisingly difficult to find essential geometrical
-    quantities you need to make calculations in some space times.
-    They are easily available for the flat FLRW in for example (Dodelson 2003),
-    but I have at least struggled finding them for the fully perturbed FLRW, especially
-    when using fully conformal coordinates. One option is to use for example the xAct
-    package of Mathematica, but here instead, I will present some analytically
-    derived results.  I will be using the Poisson gauge, which
-	reduces to the Newtonian gauge in the weak-field limit. The space-time interval is
-    stated in conformal coordinates
+	It can be surprisingly difficult to find essential
+	geometrical quantities you need to make calculations in
+	some space times. They are easily available for the flat
+	FLRW in for example (Dodelson 2003), but I have at least
+	struggled finding them for the fully perturbed FLRW,
+	especially when using fully conformal coordinates. One
+	option is to use for example the xAct package of
+	Mathematica, but here instead, I will present some
+	analytically derived results. I will be using the
+	Poisson gauge, which reduces to the Newtonian gauge in
+	the weak-field limit. The space-time interval is stated
+	in conformal coordinates
 </p>
 <span class="math">{spacetime}</span>
 <p>
-    from which we can find the metric.
-	The connection does not need be defined in terms of the
-	metric; it can instead be treated as an independent
-	object as in the Palatini formalism. The most general
-	connection describes a manifold that has curvature,
-	torsion, and non-metricity, the latter of which relates
-	to whether or not the covariant derivative that the
-	connection forms commutes with the metric. If we require
-	it to do so and also to have zero torsion, that fixes a
-	unique connection in terms of the metric, known as the
+	from which we can find the metric. The connection does
+	not need be defined in terms of the metric; it can
+	instead be treated as an independent object as in the
+	Palatini formalism. The most general connection
+	describes a manifold that has curvature, torsion, and
+	non-metricity, the latter of which relates to whether or
+	not the covariant derivative that the connection forms
+	commutes with the metric. If we require it to do so and
+	also to have zero torsion, that fixes a unique
+	connection in terms of the metric, known as the
 	Christoffel symbol
 </p>
 <span class="math">{christoffeleq}</span>
@@ -127,8 +127,8 @@
 	so we will find this specifically below, in addition to
 	the complete symbols. All symbols not shown are
 	implicitply zero, and I have only done the expansions to
-    first order in the metric potentials, following the 
-    linearisation scheme of (Adamek 2016).
+	first order in the metric potentials, following the
+	linearisation scheme of (Adamek 2016).
 </p>
 
 <h2>Conformal time coordinates</h2>
@@ -138,8 +138,11 @@
 	symbols
 </p>
 <span class="math">{conformal}</span>
-<p>For which I made use of the useful quantities that I have
-    derived using the cofactor expansion and Cramer's rule. </p>
+<p>
+	For which I made use of the useful quantities that I
+	have derived using the cofactor expansion and Cramer's
+	rule.
+</p>
 <span class="math">{determinant}</span>
 
 <h2>Cosmic time coordinates</h2>
@@ -152,7 +155,7 @@
 </p>
 <span class="math">{cosmictime}</span>
 
-<p>For which I have made use of the quantities </p>
+<p>For which I have made use of the quantities</p>
 <span class="math">{determinantCT}</span>
 
 <h3>Flat space</h3>
