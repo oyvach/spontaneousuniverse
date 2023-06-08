@@ -13,32 +13,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;350;400;450;500;550;600&display=swap"
       rel="stylesheet"
     />
     <meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/0.b2914d85.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.fbe63b57.js">
+		<link href="../_app/immutable/assets/0.1cea835a.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.b8f07bad.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.fe3c98df.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.5c5c9d06.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.5f73dbdc.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.9f38016c.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.8e608f7f.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/9.a132a638.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.40ec8009.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.6df3ca5b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.791f0b76.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.467adf0f.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/10.233c0f18.js">
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">
 
 
-<div class="app svelte-1qo7bn3"><nav class="header svelte-ksvx5c"><div class="logo svelte-ksvx5c"><a href="/" class="svelte-ksvx5c">Øyvind Christiansen </a></div>
-  <div class="links"><div class="dropdown svelte-ksvx5c"><span>Topics</span>
-      <div class="dropdown-content svelte-ksvx5c"><div class="dropdown-item svelte-ksvx5c"><a class="link svelte-ksvx5c" href="/publications">Publications</a></div>
-        <div class="dropdown-item svelte-ksvx5c"><a class="link svelte-ksvx5c" href="/symmetron">Asymmetron</a></div>
-        <div class="dropdown-item svelte-ksvx5c"><a class="link svelte-ksvx5c" href="/aest">AeST</a></div>
-        <div class="dropdown-item svelte-ksvx5c"><a class="link svelte-ksvx5c" href="/cbh">Charged Black Holes</a></div>
-        <div class="dropdown-item svelte-ksvx5c"><a class="link svelte-ksvx5c" href="/notes">Notes</a></div></div></div>
+<div class="app svelte-1qo7bn3"><nav class="header svelte-1mfp3vh"><div class="logo svelte-1mfp3vh"><a href="/" class="svelte-1mfp3vh">Øyvind Christiansen </a></div>
+  <div class="links"><div class="dropdown svelte-1mfp3vh"><span>Topics </span><span style="font-size:large;">☰</span>
+      <div class="dropdown-content svelte-1mfp3vh"><div class="dropdown-item svelte-1mfp3vh"><a class="link svelte-1mfp3vh" href="/publications">Publications</a></div>
+        <div class="dropdown-item svelte-1mfp3vh"><a class="link svelte-1mfp3vh" href="/projects">Projects</a></div>
+        <div class="dropdown-item svelte-1mfp3vh"><a class="link svelte-1mfp3vh" href="/pop-science">Pop-science</a></div>
+        <div class="dropdown-item svelte-1mfp3vh"><a class="link svelte-1mfp3vh" href="/notes">Notes</a></div>
+        <div class="dropdown-item svelte-1mfp3vh"><a class="link svelte-1mfp3vh" href="/gallery">Gallery</a></div></div></div>
     <div class="link"><a href="/about">about me </a></div>
-    <div class="link"><a href="/acknowledgements">acknowledgements </a></div>
+
     <div class="link"><a href="/contact">contact </a></div></div>
 </nav>
   <main class="content svelte-1qo7bn3"><h1>The Christoffel symbols of perturbed FLRW spacetimes
@@ -50,9 +50,15 @@
 	FLRW in for example (Dodelson 2003), but I have at least
 	struggled finding them for the fully perturbed FLRW,
 	especially when using fully conformal coordinates. One
-	option is to use for example the xAct package of
+	option is to use for example the 
+    <span class="textlink"><a href="http://www.xact.es/">xAct</a></span>
+    package of
 	Mathematica, but here instead, I will present some
-	analytically derived results. I will be using the
+	analytically derived results that have been verified against
+    a Christoffel solver I made in
+    <span class="textlink"><a href="https://www.sympy.org/en/index.html">sympy</a></span>.
+    The cosmic time coordinate
+    calculation is made entirely in sympy. I will be using the
 	Poisson gauge, which reduces to the Newtonian gauge in
 	the weak-field limit. The space-time interval is stated
 	in conformal coordinates
@@ -98,13 +104,20 @@
     \begin{eqnarray}
     \Gamma^\alpha_{0\alpha} &amp;=&amp; \frac{1}{2}g^{\lambda\alpha}g_{\lambda\alpha,0} = \partial_0 \left( \Psi-3\Phi+\frac{1}{2}h\right)+4\mathcal{H}, \\
     \Gamma^\alpha_{i\alpha} &amp;=&amp;  \frac{1}{2}g^{\lambda\alpha}g_{\lambda\alpha,i} =\partial_i \left( \Psi-3\Phi+\frac{1}{2}h\right),\\
-    \Gamma^0_{ij} &amp;=&amp; 
-    \\\Gamma^i_{00} &amp;=&amp; 
+    \Gamma^0_{ij} &amp;=&amp; \mathcal{H}\left(
+        1 - 2 \Psi - 2 \Psi - \dot\Phi/\mathcal{H}
+    \right)\delta_{ij} + \mathcal{H}h_{ij} + \dot h_{ij}/2 
+    + \partial_{(i}B_{j)},
+    \\\Gamma^{\mu}_{00} &amp;=&amp;  \mathcal{H}\delta_t^{\mu}+\partial_\mu\Psi-\delta^{\mu i}(B_i\mathcal{H}+\dot B_i),
+    \\\Gamma^{i}_{j0} &amp;=&amp;  \delta_{ij}\left( \mathcal{H}-\dot\Phi \right)+\dot{h}_{ij}/2 + \partial_{[i}B_{j]},
+    \\\Gamma^{i}_{jk} &amp;=&amp;  \partial_{(j}h_{k)i}-\frac{1}{2}\partial_i h_{jk} 
+    +\left(\partial_i\Phi + B_i \mathcal{H}\right)
+     \delta_{jk} - 2\delta_{i(j} \partial_{k)}\Phi,
     \end{eqnarray}
     $$</span>
-<p>For which I made use of the useful quantities that I
-	have derived using the cofactor expansion and Cramer&#39;s
-	rule.
+<p>the latter of which I found using sympy and compactified according to appararent index-dependencies of the terms.
+	To find this result, I derived the inverse of the metric using the cofactor expansion and Cramer&#39;s
+	rule
 </p>
 <span class="math">$$
     \begin{eqnarray}
@@ -141,7 +154,7 @@
     \\
     \Gamma^i_{j0} &amp;=&amp;   \\
     \Gamma^0_{i0} &amp;=&amp;   \\
-    \Gamma^i_{00} &amp;=&amp;  
+    \Gamma^{\mu}_{00} &amp;=&amp;  
     \end{eqnarray}
     $$</span>
 
@@ -177,7 +190,7 @@
 			
 			<script>
 				{
-					__sveltekit_13an81n = {
+					__sveltekit_1v2exmm = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -187,11 +200,11 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.fbe63b57.js"),
-						import("../_app/immutable/entry/app.9f38016c.js")
+						import("../_app/immutable/entry/start.b8f07bad.js"),
+						import("../_app/immutable/entry/app.791f0b76.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 9],
+							node_ids: [0, 10],
 							data,
 							form: null,
 							error: null
